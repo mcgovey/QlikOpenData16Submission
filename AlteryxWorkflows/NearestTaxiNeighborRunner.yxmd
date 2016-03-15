@@ -1,0 +1,451 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="10.0">
+  <Nodes>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="186" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="7" />
+          <Fields>
+            <Field name="AppendName" />
+            <Field name="FileLocation" />
+            <Field name="Type" />
+          </Fields>
+          <Data>
+            <r>
+              <c>201507</c>
+              <c>C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\yellow_tripdata_2015-07.csv</c>
+              <c>'Yellow'</c>
+            </r>
+            <r>
+              <c>201508</c>
+              <c>C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\yellow_tripdata_2015-08.csv</c>
+              <c>'Yellow'</c>
+            </r>
+            <r>
+              <c>201509</c>
+              <c>C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\yellow_tripdata_2015-09.csv</c>
+              <c>'Yellow'</c>
+            </r>
+            <r>
+              <c>201510</c>
+              <c>C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\yellow_tripdata_2015-10.csv</c>
+              <c>'Yellow'</c>
+            </r>
+            <r>
+              <c>201511</c>
+              <c>C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\yellow_tripdata_2015-11.csv</c>
+              <c>'Yellow'</c>
+            </r>
+            <r>
+              <c>201512</c>
+              <c>C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\yellow_tripdata_2015-12.csv</c>
+              <c>'Yellow'</c>
+            </r>
+            <r>
+              <c />
+              <c>C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\yellow_tripdata_2015-01-06.csv</c>
+              <c>'Yellow'</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>green_tripdata_2015_0106.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="pickup_datetime" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="dropoff_datetime" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Store_and_fwd_flag" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="rate_code" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Dropoff_latitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Passenger_count" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Trip_distance" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Fare_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Extra" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="MTA_tax" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Tip_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Tolls_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Ehail_fee" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Total_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Payment_type" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Trip_type" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Pickup_longitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Pickup_latitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Dropoff_longitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="vendorid" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Improvement_surcharge" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="378" y="191" width="251" height="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Green Single Month</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="60" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="438" y="318" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="12" />
+              <Fields>
+                <Field name="AppendName" />
+                <Field name="FileLocation" />
+                <Field name="Type   " />
+              </Fields>
+              <Data>
+                <r>
+                  <c>'201507_Gr'</c>
+                  <c>C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015-07.csv</c>
+                  <c>'Green'</c>
+                </r>
+                <r>
+                  <c>'201508_Gr'</c>
+                  <c>C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015-08.csv</c>
+                  <c>'Green'</c>
+                </r>
+                <r>
+                  <c>'201509_Gr'</c>
+                  <c>C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015-09.csv</c>
+                  <c>'Green'</c>
+                </r>
+                <r>
+                  <c>'201510_Gr'</c>
+                  <c>C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015-10.csv</c>
+                  <c>'Green'</c>
+                </r>
+                <r>
+                  <c>'201511_Gr'</c>
+                  <c>C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015-11.csv</c>
+                  <c>'Green'</c>
+                </r>
+                <r>
+                  <c>'201512_Gr'</c>
+                  <c>C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015-12.csv</c>
+                  <c>'Green'</c>
+                </r>
+                <r>
+                  <c>'201501_Gr'</c>
+                  <c>C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015-01_new.csv</c>
+                  <c>'Green'</c>
+                </r>
+                <r>
+                  <c>'201502_Gr'</c>
+                  <c>C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015-02_new.csv</c>
+                  <c>'Green'</c>
+                </r>
+                <r>
+                  <c>'201503_Gr'</c>
+                  <c>C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015-03_new.csv</c>
+                  <c>'Green'</c>
+                </r>
+                <r>
+                  <c>'201504_Gr'</c>
+                  <c>C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015-04_new.csv</c>
+                  <c>'Green'</c>
+                </r>
+                <r>
+                  <c>'201505_Gr'</c>
+                  <c>C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015-05_new.csv</c>
+                  <c>'Green'</c>
+                </r>
+                <r>
+                  <c>'201506_Gr'</c>
+                  <c>C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015-06_new.csv</c>
+                  <c>'Green'</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings>
+            <Position x="510" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="ControlParams"><![CDATA[Control Parameter (57)=FileLocation
+Control Parameter (59)=AppendName
+Control Parameter (61)=Type   
+]]></Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="GreenNearestTaxiNeighborMacroSingleMonth.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="558" y="18" width="145.2751" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Green Run Full Year</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="60" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="618" y="97" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="AppendName" />
+                <Field name="FileLocation" />
+                <Field name="Type   " />
+              </Fields>
+              <Data>
+                <r>
+                  <c>'20150106_Gr'</c>
+                  <c>C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv</c>
+                  <c>'Green'</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings>
+            <Position x="822" y="133" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="ControlParams"><![CDATA[Control Parameter (57)=FileLocation
+Control Parameter (59)=AppendName
+Control Parameter (61)=Type   
+]]></Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="GreenNearestTaxiNeighborMacro.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="114" y="354" width="120" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Yellow Write</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="60" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="174" y="433" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="7" />
+              <Fields>
+                <Field name="AppendName" />
+                <Field name="FileLocation" />
+                <Field name="Type" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>201508</c>
+                  <c>C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\yellow_tripdata_2015-08.csv</c>
+                  <c>'Yellow'</c>
+                </r>
+                <r>
+                  <c>201509</c>
+                  <c>C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\yellow_tripdata_2015-09.csv</c>
+                  <c>'Yellow'</c>
+                </r>
+                <r>
+                  <c>201510</c>
+                  <c>C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\yellow_tripdata_2015-10.csv</c>
+                  <c>'Yellow'</c>
+                </r>
+                <r>
+                  <c>201511</c>
+                  <c>C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\yellow_tripdata_2015-11.csv</c>
+                  <c>'Yellow'</c>
+                </r>
+                <r>
+                  <c>201512</c>
+                  <c>C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\yellow_tripdata_2015-12.csv</c>
+                  <c>'Yellow'</c>
+                </r>
+                <r>
+                  <c>20150106</c>
+                  <c>C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\yellow_tripdata_2015-01-06.csv</c>
+                  <c>'Yellow'</c>
+                </r>
+                <r>
+                  <c>201507</c>
+                  <c>C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\yellow_tripdata_2015-08.csv</c>
+                  <c>'Yellow'</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings>
+            <Position x="282" y="438" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="ControlParams"><![CDATA[Control Parameter (57)=FileLocation
+Control Parameter (59)=AppendName
+Control Parameter (61)=Type
+]]></Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="NearestTaxiNeighborMacro.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="14" Connection="Control" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Control" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="8" Connection="Control" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>NearestTaxiNeighborRunner</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

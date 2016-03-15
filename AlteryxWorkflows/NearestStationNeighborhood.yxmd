@@ -1,0 +1,323 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="10.0">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="402" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\DailyStationTurnstiles.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DailyStationTurnstiles.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Station_Lat" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\DailyStationTurnstiles.csv" type="V_WString" />
+            <Field name="Station_Lon" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\DailyStationTurnstiles.csv" type="V_WString" />
+            <Field name="STATION" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\DailyStationTurnstiles.csv" type="V_WString" />
+            <Field name="Date" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\DailyStationTurnstiles.csv" type="V_WString" />
+            <Field name="DailyEntries" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\DailyStationTurnstiles.csv" type="V_WString" />
+            <Field name="DailyExits" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\DailyStationTurnstiles.csv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.CreatePoints.CreatePoints">
+        <Position x="330" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields fieldX="Station_Lon" fieldY="Station_Lat" />
+          <Mode>Double</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxCreatePoints" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.FindNearest.FindNearest">
+        <Position x="150" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Target SpatialObj="Centroid" />
+          <Universe SpatialObj="SpatialObj" />
+          <HowMany value="1" />
+          <MaxDistance value="0.1" />
+          <MaxDistanceUnits>Miles</MaxDistanceUnits>
+          <Ignore0 value="False" />
+          <DriveTimeDataSet>Latest</DriveTimeDataSet>
+          <SelectConfiguration>
+            <Configuration outputConnection="Matched">
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="FindNearestRank" selected="False" />
+                <SelectField field="Direction" selected="False" />
+                <SelectField field="Universe_Date" selected="True" rename="Universe_Date" />
+                <SelectField field="Universe_Centroid" selected="True" rename="Universe_Centroid" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxFindNearest" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="90" y="750" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\DailyStationTurnstilesNeighborhood.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DailyStationTurnstilesNeighborhood.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="54" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="Name" selected="True" rename="NeighborhoodName" />
+            <SelectField field="Description" selected="True" rename="NeighborhoodDescription" />
+            <SelectField field="stop_id" selected="False" />
+            <SelectField field="stop_code" selected="False" />
+            <SelectField field="stop_desc" selected="False" />
+            <SelectField field="zone_id" selected="False" />
+            <SelectField field="stop_url" selected="False" />
+            <SelectField field="location_type" selected="False" />
+            <SelectField field="parent_station" selected="False" />
+            <SelectField field="DownloadData" selected="False" />
+            <SelectField field="Division" selected="False" />
+            <SelectField field="Line" selected="False" />
+            <SelectField field="Route_1" selected="False" />
+            <SelectField field="Route_2,Route_3,Route_4,Route_5,Route_6,Route_7,Route_8,Route_9,Route_10,Route_11,Entrance_Type,Entry,Exit_Only,Vending,Staffing,Staff_Hours,ADA,ADA_Notes,Free_Crossover,North_South_Street,East_West_Street,Corner,Latitude,Longitude&#xD;" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="22" SearchSubDirs="False" RecordLimit="">C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\NeighborhoodShapefile.kml</File>
+          <FormatSpecificOptions>
+            <ReadCentroids>False</ReadCentroids>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>NeighborhoodShapefile.kml</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="65535" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\NeighborhoodShapefile.kml" type="V_String" />
+            <Field name="Description" size="65535" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\NeighborhoodShapefile.kml" type="V_String" />
+            <Field name="SpatialObj" size="2147483647" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\NeighborhoodShapefile.kml" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="402" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="VendorID" selected="True" />
+            <Field field="tpep_pickup_datetime" selected="True" />
+            <Field field="tpep_dropoff_datetime" selected="True" />
+            <Field field="passenger_count" selected="True" />
+            <Field field="trip_distance" selected="True" />
+            <Field field="pickup_longitude" selected="True" />
+            <Field field="pickup_latitude" selected="True" />
+            <Field field="RateCodeID" selected="True" />
+            <Field field="store_and_fwd_flag" selected="True" />
+            <Field field="dropoff_longitude" selected="True" />
+            <Field field="dropoff_latitude" selected="True" />
+            <Field field="payment_type" selected="True" />
+            <Field field="fare_amount" selected="True" />
+            <Field field="extra" selected="True" />
+            <Field field="mta_tax" selected="True" />
+            <Field field="tip_amount" selected="True" />
+            <Field field="tolls_amount" selected="True" />
+            <Field field="total_amount" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Station_Lat" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\DailyStationTurnstiles.csv" type="Double" />
+            <Field name="Station_Lon" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\DailyStationTurnstiles.csv" type="Double" />
+            <Field name="STATION" size="15" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\DailyStationTurnstiles.csv" type="String" />
+            <Field name="Date" size="10" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\DailyStationTurnstiles.csv" type="String" />
+            <Field name="DailyEntries" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\DailyStationTurnstiles.csv" type="Int32" />
+            <Field name="DailyExits" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\DailyStationTurnstiles.csv" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="114" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\KEVIN~1.MCG\AppData\Local\Temp\Engine_14596_d4fb521a5b6041bdbd3dfd3c02374d34_\Engine_15420_3caad9601bb0410e8bd09cd4e42c4093_.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="186" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\KEVIN~1.MCG\AppData\Local\Temp\Engine_14596_d4fb521a5b6041bdbd3dfd3c02374d34_\Engine_15420_0c8726c53bec4bb49a2328388967b05e_.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="14" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="14" Connection="Universe" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Matched" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Unmatched" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Matched" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Vertical</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>NearestStationNeighborhood</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

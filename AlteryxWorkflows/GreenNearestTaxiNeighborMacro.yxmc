@@ -1,0 +1,1142 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="10.0">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="402" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>green_tripdata_2015_0106.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="pickup_datetime" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="dropoff_datetime" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Store_and_fwd_flag" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="rate_code" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Dropoff_latitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Passenger_count" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Trip_distance" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Fare_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Extra" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="MTA_tax" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Tip_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Tolls_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Ehail_fee" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Total_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Payment_type" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Trip_type" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Pickup_longitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Pickup_latitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Dropoff_longitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="vendorid" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Improvement_surcharge" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="390" y="534" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="pickup_datetime" selected="True" rename="tpep_pickup_datetime" />
+            <SelectField field="dropoff_datetime" selected="True" rename="tpep_dropoff_datetime" />
+            <SelectField field="store_and_fwd_flag" selected="False" />
+            <SelectField field="passenger_count" selected="True" type="Int32" size="4" />
+            <SelectField field="trip_distance" selected="True" type="Double" size="8" />
+            <SelectField field="fare_amount" selected="False" />
+            <SelectField field="extra" selected="False" />
+            <SelectField field="mta_tax" selected="False" />
+            <SelectField field="tip_amount" selected="False" />
+            <SelectField field="tolls_amount" selected="False" />
+            <SelectField field="Ehail_fee" selected="False" />
+            <SelectField field="total_amount" selected="False" />
+            <SelectField field="payment_type" selected="False" />
+            <SelectField field="Trip_type" selected="False" />
+            <SelectField field="VendorID" selected="False" />
+            <SelectField field="improvement_surcharge" selected="False" />
+            <SelectField field="lpep_pickup_datetime" selected="False" rename="tpep_pickup_datetime" />
+            <SelectField field="Lpep_dropoff_datetime" selected="False" rename="tpep_dropoff_datetime" />
+            <SelectField field="RateCodeID" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="tpep_pickup_datetime" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="tpep_dropoff_datetime" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="rate_code" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Dropoff_latitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Passenger_count" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="Int32" />
+            <Field name="Trip_distance" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="Double" />
+            <Field name="Pickup_longitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Pickup_latitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Dropoff_longitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Pickup_DateTime_Out" source="DateTime: To MM/dd/yyyy hh:mm:ss" type="DateTime" />
+            <Field name="Dropoff_DateTime_Out" source="DateTime: To MM/dd/yyyy hh:mm:ss" type="DateTime" />
+            <Field name="FilePeriod" size="64" source="Formula: '201501_Gr'" type="String" />
+            <Field name="Type" size="64" source="Formula: ''" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.CreatePoints.CreatePoints">
+        <Position x="330" y="822" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields fieldX="long" fieldY="lat" />
+          <Mode>Double</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="rate_code" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Passenger_count" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="Int32" />
+            <Field name="Trip_distance" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="Double" />
+            <Field name="long" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="lat" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Date" source="DateTime: To MM/dd/yyyy hh:mm:ss" type="DateTime" />
+            <Field name="FilePeriod" size="64" source="Formula: '201501_Gr'" type="String" />
+            <Field name="Type" size="64" source="Formula: ''" type="String" />
+            <Field name="TripType" size="64" source="Formula: 'Entry'" type="String" />
+            <Field name="Centroid" size="2147483647" source="CreatePoints: x=long y=lat" type="SpatialObj" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxCreatePoints" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="354" y="726" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField field="TripType" type="String" size="64" expression="'Entry'" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>TripType='Entry'</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="rate_code" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Passenger_count" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="Int32" />
+            <Field name="Trip_distance" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="Double" />
+            <Field name="long" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="lat" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Date" source="DateTime: To MM/dd/yyyy hh:mm:ss" type="DateTime" />
+            <Field name="FilePeriod" size="64" source="Formula: '201501_Gr'" type="String" />
+            <Field name="Type" size="64" source="Formula: ''" type="String" />
+            <Field name="TripType" size="64" source="Formula: 'Entry'" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="366" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="tpep_pickup_datetime" selected="False" rename="Date" />
+            <SelectField field="tpep_dropoff_datetime" selected="False" />
+            <SelectField field="dropoff_latitude" selected="False" />
+            <SelectField field="pickup_longitude" selected="True" rename="long" />
+            <SelectField field="pickup_latitude" selected="True" rename="lat" />
+            <SelectField field="dropoff_longitude" selected="False" />
+            <SelectField field="Pickup_DateTime_Out" selected="True" rename="Date" />
+            <SelectField field="Dropoff_DateTime_Out" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="rate_code" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Passenger_count" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="Int32" />
+            <Field name="Trip_distance" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="Double" />
+            <Field name="long" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="lat" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Date" source="DateTime: To MM/dd/yyyy hh:mm:ss" type="DateTime" />
+            <Field name="FilePeriod" size="64" source="Formula: '201501_Gr'" type="String" />
+            <Field name="Type" size="64" source="Formula: ''" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.FindNearest.FindNearest">
+        <Position x="150" y="918" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Target SpatialObj="Centroid" />
+          <Universe SpatialObj="SpatialObj" />
+          <HowMany value="1" />
+          <MaxDistance value="1" />
+          <MaxDistanceUnits>Miles</MaxDistanceUnits>
+          <Ignore0 value="False" />
+          <DriveTimeDataSet>Latest</DriveTimeDataSet>
+          <SelectConfiguration>
+            <Configuration outputConnection="Matched">
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="FindNearestRank" selected="False" />
+                <SelectField field="DistanceMiles" selected="False" />
+                <SelectField field="Direction" selected="False" />
+                <SelectField field="Universe_Date" selected="True" rename="Universe_Date" />
+                <SelectField field="Universe_Centroid" selected="True" rename="Universe_Centroid" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Matched">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="rate_code" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Passenger_count" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="Int32" />
+            <Field name="Trip_distance" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="Double" />
+            <Field name="long" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="lat" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Date" source="DateTime: To MM/dd/yyyy hh:mm:ss" type="DateTime" />
+            <Field name="FilePeriod" size="64" source="Formula: '201501_Gr'" type="String" />
+            <Field name="Type" size="64" source="Formula: ''" type="String" />
+            <Field name="TripType" size="64" source="Formula: 'Entry'" type="String" />
+            <Field name="Centroid" size="2147483647" source="CreatePoints: x=long y=lat" type="SpatialObj" />
+            <Field name="NeighborhoodName" size="65535" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\NeighborhoodShapefile.kml" type="V_String" />
+            <Field name="NeighborhoodDescription" size="65535" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\NeighborhoodShapefile.kml" type="V_String" />
+            <Field name="SpatialObj" size="2147483647" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\NeighborhoodShapefile.kml" type="SpatialObj" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Unmatched">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="rate_code" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Passenger_count" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="Int32" />
+            <Field name="Trip_distance" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="Double" />
+            <Field name="long" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="lat" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Date" source="DateTime: To MM/dd/yyyy hh:mm:ss" type="DateTime" />
+            <Field name="FilePeriod" size="64" source="Formula: '201501_Gr'" type="String" />
+            <Field name="Type" size="64" source="Formula: ''" type="String" />
+            <Field name="TripType" size="64" source="Formula: 'Entry'" type="String" />
+            <Field name="Centroid" size="2147483647" source="CreatePoints: x=long y=lat" type="SpatialObj" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxFindNearest" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="90" y="1302" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\GreenAggr\StationTaxiTripMap.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+          <MultiFile value="True" />
+          <MultiFileType>Suffix</MultiFileType>
+          <MultiFileField>FilePeriod</MultiFileField>
+          <KeepField value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>StationTaxiTripMap.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="90" y="1110" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="Date" selected="True" type="Date" size="10" />
+            <SelectField field="long" selected="False" />
+            <SelectField field="lat" selected="False" />
+            <SelectField field="TripType" selected="False" />
+            <SelectField field="Centroid" selected="False" />
+            <SelectField field="SpatialObj" selected="False" />
+            <SelectField field="FindNearestRank" selected="False" />
+            <SelectField field="DistanceMiles" selected="False" />
+            <SelectField field="Direction" selected="False" />
+            <SelectField field="StationGeoPoint" selected="False" />
+            <SelectField field="UNIT" selected="False" />
+            <SelectField field="SCP" selected="False" />
+            <SelectField field="LINENAME" selected="False" />
+            <SelectField field="DIVISION" selected="False" />
+            <SelectField field="Universe_Date" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="rate_code" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Passenger_count" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="Int32" />
+            <Field name="Trip_distance" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="Double" />
+            <Field name="Date" source="DateTime: To MM/dd/yyyy hh:mm:ss" type="Date" />
+            <Field name="FilePeriod" size="64" source="Formula: '201501_Gr'" type="String" />
+            <Field name="Type" size="64" source="Formula: ''" type="String" />
+            <Field name="NeighborhoodName" size="65535" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\NeighborhoodShapefile.kml" type="V_String" />
+            <Field name="NeighborhoodDescription" size="65535" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\NeighborhoodShapefile.kml" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="54" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="Name" selected="True" rename="NeighborhoodName" />
+            <SelectField field="Description" selected="True" rename="NeighborhoodDescription" />
+            <SelectField field="stop_id" selected="False" />
+            <SelectField field="stop_code" selected="False" />
+            <SelectField field="stop_desc" selected="False" />
+            <SelectField field="zone_id" selected="False" />
+            <SelectField field="stop_url" selected="False" />
+            <SelectField field="location_type" selected="False" />
+            <SelectField field="parent_station" selected="False" />
+            <SelectField field="DownloadData" selected="False" />
+            <SelectField field="Division" selected="False" />
+            <SelectField field="Line" selected="False" />
+            <SelectField field="Route_1" selected="False" />
+            <SelectField field="Route_2,Route_3,Route_4,Route_5,Route_6,Route_7,Route_8,Route_9,Route_10,Route_11,Entrance_Type,Entry,Exit_Only,Vending,Staffing,Staff_Hours,ADA,ADA_Notes,Free_Crossover,North_South_Street,East_West_Street,Corner,Latitude,Longitude&#xD;" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="NeighborhoodName" size="65535" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\NeighborhoodShapefile.kml" type="V_String" />
+            <Field name="NeighborhoodDescription" size="65535" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\NeighborhoodShapefile.kml" type="V_String" />
+            <Field name="SpatialObj" size="2147483647" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\NeighborhoodShapefile.kml" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="390" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <StartValue>1</StartValue>
+          <FieldName>RecordID</FieldName>
+          <FieldType>Int32</FieldType>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="pickup_datetime" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="dropoff_datetime" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Store_and_fwd_flag" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="rate_code" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Dropoff_latitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Passenger_count" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Trip_distance" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Fare_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Extra" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="MTA_tax" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Tip_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Tolls_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Ehail_fee" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Total_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Payment_type" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Trip_type" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Pickup_longitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Pickup_latitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Dropoff_longitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="vendorid" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Improvement_surcharge" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Pickup_DateTime_Out" source="DateTime: To MM/dd/yyyy hh:mm:ss" type="DateTime" />
+            <Field name="Dropoff_DateTime_Out" source="DateTime: To MM/dd/yyyy hh:mm:ss" type="DateTime" />
+            <Field name="FilePeriod" size="64" source="Formula: '201501_Gr'" type="String" />
+            <Field name="Type" size="64" source="Formula: ''" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="22" SearchSubDirs="False" RecordLimit="">C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\NeighborhoodShapefile.kml</File>
+          <FormatSpecificOptions>
+            <ReadCentroids>False</ReadCentroids>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>NeighborhoodShapefile.kml</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="65535" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\NeighborhoodShapefile.kml" type="V_String" />
+            <Field name="Description" size="65535" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\NeighborhoodShapefile.kml" type="V_String" />
+            <Field name="SpatialObj" size="2147483647" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\NeighborhoodShapefile.kml" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="90" y="1206" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Date" action="GroupBy" rename="Date" />
+            <SummarizeField field="RecordID" action="Count" rename="Count" />
+            <SummarizeField field="passenger_count" action="Sum" rename="Sum_passenger_count" />
+            <SummarizeField field="trip_distance" action="Sum" rename="Sum_trip_distance" />
+            <SummarizeField field="passenger_count" action="Median" rename="Median_passenger_count" />
+            <SummarizeField field="trip_distance" action="Median" rename="Median_trip_distance" />
+            <SummarizeField field="FilePeriod" action="GroupBy" rename="FilePeriod" />
+            <SummarizeField field="Type" action="GroupBy" rename="Type" />
+            <SummarizeField field="NeighborhoodName" action="GroupBy" rename="NeighborhoodName" />
+            <SummarizeField field="NeighborhoodDescription" action="GroupBy" rename="NeighborhoodDescription" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" source="Summarize: GroupBy - Date" type="Date" />
+            <Field name="Count" source="Summarize: Count" type="Int64" />
+            <Field name="Sum_passenger_count" source="Summarize: Sum - Passenger_count" type="Int64" />
+            <Field name="Sum_trip_distance" source="Summarize: Sum - Trip_distance" type="Double" />
+            <Field name="Median_passenger_count" source="Summarize: Median - Passenger_count" type="Double" />
+            <Field name="Median_trip_distance" source="Summarize: Median - Trip_distance" type="Double" />
+            <Field name="FilePeriod" size="64" source="Summarize: GroupBy - FilePeriod" type="String" />
+            <Field name="Type" size="64" source="Summarize: GroupBy - Type" type="String" />
+            <Field name="NeighborhoodName" size="65535" source="Summarize: GroupBy - NeighborhoodName" type="V_String" />
+            <Field name="NeighborhoodDescription" size="65535" source="Summarize: GroupBy - NeighborhoodDescription" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Date" order="Asc" />
+            <Field field="FilePeriod" order="Asc" />
+            <Field field="Type" order="Asc" />
+            <Field field="NeighborhoodName" order="Asc" />
+            <Field field="NeighborhoodDescription" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="402" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Field>payment_type</Field>
+            <Operator>!=</Operator>
+            <Operands>
+              <Operand>6</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[payment_type] != "6"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="pickup_datetime" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="dropoff_datetime" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Store_and_fwd_flag" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="rate_code" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Dropoff_latitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Passenger_count" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Trip_distance" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Fare_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Extra" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="MTA_tax" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Tip_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Tolls_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Ehail_fee" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Total_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Payment_type" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Trip_type" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Pickup_longitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Pickup_latitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Dropoff_longitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="vendorid" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Improvement_surcharge" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Pickup_DateTime_Out" source="DateTime: To MM/dd/yyyy hh:mm:ss" type="DateTime" />
+            <Field name="Dropoff_DateTime_Out" source="DateTime: To MM/dd/yyyy hh:mm:ss" type="DateTime" />
+            <Field name="FilePeriod" size="64" source="Formula: '201501_Gr'" type="String" />
+            <Field name="Type" size="64" source="Formula: ''" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="pickup_datetime" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="dropoff_datetime" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Store_and_fwd_flag" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="rate_code" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Dropoff_latitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Passenger_count" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Trip_distance" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Fare_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Extra" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="MTA_tax" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Tip_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Tolls_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Ehail_fee" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Total_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Payment_type" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Trip_type" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Pickup_longitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Pickup_latitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Dropoff_longitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="vendorid" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Improvement_surcharge" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Pickup_DateTime_Out" source="DateTime: To MM/dd/yyyy hh:mm:ss" type="DateTime" />
+            <Field name="Dropoff_DateTime_Out" source="DateTime: To MM/dd/yyyy hh:mm:ss" type="DateTime" />
+            <Field name="FilePeriod" size="64" source="Formula: '201501_Gr'" type="String" />
+            <Field name="Type" size="64" source="Formula: ''" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="402" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField field="FilePeriod" type="String" size="64" expression="'201501_Gr'" />
+            <FormulaField field="Type" type="String" size="64" expression="''" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>FilePeriod='201501_Gr'
+Type=''</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="pickup_datetime" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="dropoff_datetime" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Store_and_fwd_flag" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="rate_code" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Dropoff_latitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Passenger_count" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Trip_distance" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Fare_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Extra" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="MTA_tax" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Tip_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Tolls_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Ehail_fee" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Total_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Payment_type" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Trip_type" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Pickup_longitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Pickup_latitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Dropoff_longitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="vendorid" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Improvement_surcharge" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Pickup_DateTime_Out" source="DateTime: To MM/dd/yyyy hh:mm:ss" type="DateTime" />
+            <Field name="Dropoff_DateTime_Out" source="DateTime: To MM/dd/yyyy hh:mm:ss" type="DateTime" />
+            <Field name="FilePeriod" size="64" source="Formula: '201501_Gr'" type="String" />
+            <Field name="Type" size="64" source="Formula: ''" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="654" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="762" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="666" y="246" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="810" y="246" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="666" y="330" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="810" y="330" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="114" y="1014" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="rate_code" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Passenger_count" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="Int32" />
+            <Field name="Trip_distance" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="Double" />
+            <Field name="long" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="lat" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Date" source="DateTime: To MM/dd/yyyy hh:mm:ss" type="DateTime" />
+            <Field name="FilePeriod" size="64" source="Formula: '201501_Gr'" type="String" />
+            <Field name="Type" size="64" source="Formula: ''" type="String" />
+            <Field name="TripType" size="64" source="Formula: 'Entry'" type="String" />
+            <Field name="Centroid" size="2147483647" source="CreatePoints: x=long y=lat" type="SpatialObj" />
+            <Field name="NeighborhoodName" size="65535" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\NeighborhoodShapefile.kml" type="V_String" />
+            <Field name="NeighborhoodDescription" size="65535" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\NeighborhoodShapefile.kml" type="V_String" />
+            <Field name="SpatialObj" size="2147483647" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\DataFinal\NeighborhoodShapefile.kml" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="402" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="False" />
+          <InputFieldName>pickup_datetime</InputFieldName>
+          <Format>MM/dd/yyyy hh:mm:ss</Format>
+          <OutputFieldName>Pickup_DateTime_Out</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert pickup_datetime From:
+MM/dd/yyyy hh:mm:ss</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="pickup_datetime" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="dropoff_datetime" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Store_and_fwd_flag" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="rate_code" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Dropoff_latitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Passenger_count" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Trip_distance" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Fare_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Extra" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="MTA_tax" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Tip_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Tolls_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Ehail_fee" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Total_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Payment_type" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Trip_type" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Pickup_longitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Pickup_latitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Dropoff_longitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="vendorid" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Improvement_surcharge" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Pickup_DateTime_Out" source="DateTime: To MM/dd/yyyy hh:mm:ss" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="402" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="False" />
+          <InputFieldName>pickup_datetime</InputFieldName>
+          <Format>MM/dd/yyyy hh:mm:ss</Format>
+          <OutputFieldName>Dropoff_DateTime_Out</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert pickup_datetime From:
+MM/dd/yyyy hh:mm:ss</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="pickup_datetime" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="dropoff_datetime" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Store_and_fwd_flag" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="rate_code" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Dropoff_latitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Passenger_count" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Trip_distance" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Fare_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Extra" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="MTA_tax" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Tip_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Tolls_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Ehail_fee" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Total_amount" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Payment_type" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Trip_type" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Pickup_longitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Pickup_latitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Dropoff_longitude" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="vendorid" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Improvement_surcharge" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Qlik\OpenData\MTADataCollection\Data\green_tripdata_2015_0106.csv" type="V_WString" />
+            <Field name="Pickup_DateTime_Out" source="DateTime: To MM/dd/yyyy hh:mm:ss" type="DateTime" />
+            <Field name="Dropoff_DateTime_Out" source="DateTime: To MM/dd/yyyy hh:mm:ss" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="14" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="14" Connection="Universe" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="14" Connection="Matched" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="14" Connection="Unmatched" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="True" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="57" Connection="Question" />
+      <Destination ToolID="58" Connection="Question" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="58" Connection="Action" />
+      <Destination ToolID="2" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="59" Connection="Question" />
+      <Destination ToolID="60" Connection="Question" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="60" Connection="Action" />
+      <Destination ToolID="54" Connection="Action" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="62" Connection="Action" />
+      <Destination ToolID="54" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="61" Connection="Question" />
+      <Destination ToolID="62" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Vertical</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (57)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (59)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (61)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>GreenNearestTaxiNeighborMacro</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateInput</Type>
+              <Description />
+              <ToolId value="58" />
+              <Variable />
+              <InputTool value="-1" />
+              <Required value="True" />
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="60" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>54/FormulaFields/FormulaField/@expression</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="62" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>54/FormulaFields/FormulaField[@field='Type']/@expression</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (56)</Name>
+          <ToolId value="56" />
+          <Questions>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>Input File Path</Description>
+              <Name>Control Parameter (57)</Name>
+              <ToolId value="57" />
+            </Question>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>FilePeriod Value</Description>
+              <Name>Control Parameter (59)</Name>
+              <ToolId value="59" />
+            </Question>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>Green Yellow Type</Description>
+              <Name>Control Parameter (61)</Name>
+              <ToolId value="61" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="0" />
+      <MacroInputs />
+      <MacroOutputs />
+      <BatchMacro>
+        <OutputMode>AllSame</OutputMode>
+        <ControlParams>
+          <ControlParam>
+            <Name>Control Parameter (57)</Name>
+            <Description>Input File Path</Description>
+          </ControlParam>
+          <ControlParam>
+            <Name>Control Parameter (59)</Name>
+            <Description>FilePeriod Value</Description>
+          </ControlParam>
+          <ControlParam>
+            <Name>Control Parameter (61)</Name>
+            <Description>Green Yellow Type</Description>
+          </ControlParam>
+        </ControlParams>
+      </BatchMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="19" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
